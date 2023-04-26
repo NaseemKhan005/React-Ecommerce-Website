@@ -1,0 +1,21 @@
+form {
+	display: flex;
+	flex-direction: column;
+	max-width: 450px;
+	margin: auto;
+
+	& input,
+	textarea {
+		padding: 15px;
+		margin: 10px 0;
+		border: 1px solid var(--black);
+		outline: none;
+		resize: vertical;
+		border-radius: 4px;
+		text-transform: capitalize;
+	}
+
+	& input[type="email"] {
+		text-transform: none;
+	}
+}

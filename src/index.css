@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sana:wght@200;300;400;500;600;700;900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Kumbh Sana", sans-serif;
+}
+
+:root {
+	--black: #333;
+	--white: #fff;
+	--primary: #6952ff;
+	--secondary: #b7b0f3;
+	--text-color: #868886;
+	--main-color: #f8fbff;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.icon {
+	cursor: pointer;
+	font-weight: 500;
+}
+
+.toggle-menu {
+	right: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.row {
+	max-width: 1150px;
+	margin: auto;
+	position: relative;
+}
+
+.title {
+	text-transform: capitalize;
+	text-align: center;
+	margin: 50px 0;
+	font-weight: 500;
+}
+
+.submit-btn {
+	background-color: var(--primary);
+	color: var(--white);
+	font-size: 16px;
+	cursor: pointer;
+
+	&:hover {
+		background-color: #5a43f1;
+	}
+}
+
+.col-4 {
+	flex-basis: 23%;
+}
+
+@media screen and (max-width: 767px) {
+	.col-4 {
+		flex-basis: 45%;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.container {
+		padding: 30px 20px;
+	}
+	.title {
+		font-size: 26px;
+	}
+	.col-4 {
+		flex-basis: 100%;
+	}
+}
