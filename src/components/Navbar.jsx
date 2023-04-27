@@ -10,7 +10,6 @@ const Navbar = () => {
 		<>
 			<div className="nav-links">
 				<ul className={openMenu ? "nav-list toggle-menu flex" : "nav-list flex"}>
-					{/* <ul className="toggle-menu flex"> */}
 					<li>
 						<NavLink to="/" className="line-hover">
 							Home

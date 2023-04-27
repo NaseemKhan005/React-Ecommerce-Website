@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import HeroSection from "../components/HeroSection";
 import image from "../assets/images/home.jpg";
 import Services from "../components/Services";

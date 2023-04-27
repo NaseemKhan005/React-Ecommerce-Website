@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Products from "./pages/Products";
@@ -14,18 +14,20 @@ import Login from "./pages/Login";
 const App = () => {
 	return (
 		<>
-			<Header />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/about" element={<About />} />
-				<Route path="/products" element={<Products />} />
-				<Route path="/SingleProduct/:id" element={<SingleProduct />} />
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/login" element={<Login />} />
-				<Route path="/cart" element={<Cart />} />
-				<Route path="*" element={<PageNotFound />} />
-			</Routes>
-			<Footer />
+			<Router>
+				<Header />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/products" element={<Products />} />
+					<Route path="/SingleProduct/:id" element={<SingleProduct />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/login" element={<Login />} />
+					<Route path="/cart" element={<Cart />} />
+					<Route path="*" element={<PageNotFound />} />
+				</Routes>
+				<Footer />
+			</Router>
 		</>
 	);
 };
