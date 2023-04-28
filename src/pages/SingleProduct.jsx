@@ -3,7 +3,6 @@ import { NavLink, useParams } from "react-router-dom";
 import { useProductContext } from "../context/ProductContext";
 import "../assets/styles/single-product.css";
 import SingleProductImage from "../components/SingleProductImage";
-import SingleProductDescription from "../components/SingleProductDescription";
 
 const Api = "https://api.pujakaitem.com/api/products";
 const SingleProduct = () => {
@@ -52,9 +51,7 @@ const SingleProduct = () => {
 							<SingleProductImage image={image} />
 						</div>
 
-						<div className="single-product-col-2">
-							<SingleProductDescription />
-						</div>
+						<div className="single-product-col-2"></div>
 					</div>
 				</div>
 			</div>
